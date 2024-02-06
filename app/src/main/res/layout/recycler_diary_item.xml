@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--    //android:background="@drawable/rounded_corner"-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="5"
+                android:layout_marginVertical="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pair_diary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="3"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="BTCUSDT">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_buy_sell_diary"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    tools:text="SHORT" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:weightSum="12">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="PnL"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_pnl_diary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        tools:text="10.0000" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <TableRow android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:text="Entry Price :"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_entry_price_diary"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                tools:text="12345678" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:text="Exit Price"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_exit_price_diary"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                tools:text="192.168.0.1" />
+                        </LinearLayout>
+
+                    </TableRow>
+                    <TableRow android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:text="Quantity"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_trade_qty_diary"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                tools:text="3.0.2.111" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:text="Date"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_trade_date_diary"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                tools:text="3.0.2.111" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+                    <TableRow android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:text="Time"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_trade_time_diary"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                tools:text="3.0.2.111" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</LinearLayout>

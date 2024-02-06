@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "17582058592",
+    "firebase_url": "https://trading-app-43dfe-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "trading-app-43dfe",
+    "storage_bucket": "trading-app-43dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17582058592:android:9b9ddd9205c5978f16e705",
+        "android_client_info": {
+          "package_name": "com.example.api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxZQ2mDEcp0u4x7YxX_DCZYOEXQxvdjE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17582058592:android:450d0cd622b2d50216e705",
+        "android_client_info": {
+          "package_name": "com.example.cryptofuturestrader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxZQ2mDEcp0u4x7YxX_DCZYOEXQxvdjE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17582058592:android:16f0173d0961173c16e705",
+        "android_client_info": {
+          "package_name": "com.example.futurestrader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxZQ2mDEcp0u4x7YxX_DCZYOEXQxvdjE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
